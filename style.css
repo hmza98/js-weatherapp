@@ -1,0 +1,111 @@
+body {
+  background: rgb(190, 172, 172);
+  background: linear-gradient(
+    0deg,
+    rgba(190, 172, 172, 1) 20%,
+    rgba(181, 179, 169, 1) 42%,
+    rgba(255, 113, 113, 0.9827118347338936) 100%
+  );
+}
+.playarea {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  padding: 70px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+
+  background: rgb(254, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 255, 255, 1) 0%,
+    rgba(75, 75, 75, 0.9827118347338936) 100%
+  );
+}
+.weather-sec {
+  height: 100%;
+  width: 50%;
+}
+#temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.wind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#windspeed,
+#winddeg {
+  font-size: 30px;
+}
+
+#location {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.location-sec {
+  border-left: 2px solid black;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#error-msg {
+  color: red;
+}
+
+#cityName {
+  height: 30px;
+  border-radius: 7px;
+}
+
+#search-btn {
+  height: 30px;
+}
+
+.all {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(206, 238, 137, 1) 17%,
+    rgba(121, 163, 226, 1) 43%,
+    rgba(108, 151, 173, 1) 78%,
+    rgba(54, 145, 242, 1) 100%
+  );
+}
+
+.clear {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(54, 170, 242, 0.9827118347338936) 100%
+  );
+}
+
+.smoke {
+  background: rgb(254, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 255, 255, 1) 0%,
+    rgba(75, 75, 75, 0.9827118347338936) 100%
+  );
+}

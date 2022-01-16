@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="playarea" class="playarea">
+      <div class="weather-sec">
+        <h1 id="temp"></h1>
+        <div class="wind">
+          <div class="speed-sec">
+            <p>Wind Speed (km/h)</p>
+            <h4 id="windspeed"></h4>
+          </div>
+          <div class="deg-sec">
+            <p>Wind Degree</p>
+            <h4 id="winddeg"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="location-sec">
+        <div class="current-loc">
+          <p id="location"></p>
+        </div>
+        <div class="change-location">
+          <p id="error-msg"></p>
+          <input id="cityName" type="text" placeholder="Enter city name" />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module">
+      import {searchWeather} from './script.js'
+      document.getElementById("search-btn").addEventListener('click' , searchWeather)
+    </script>
+    
+  </body>
+</html>
